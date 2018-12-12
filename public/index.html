@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dogiblogi</title>
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div id="ylapalkki">
+    <h1>DOGIBLOGI</h1>
+        <ul>
+            <li><a class="active" href="index.html">Koti</a></li>
+            <li><a href="profiili.html">Profiili</a></li>
+            <li><a href="uusi.html">Uusi blogi</a></li>
+            <li style="float:right"><a href="./logout">Kirjaudu ulos</a></li>
+        </ul>
+    </div>
+
+    <div id="mega">
+    <div id="sivupalkki">
+        <img id="logo" src="kuvat/logo.png" alt="Logo">
+        <h3>Kirjaudu sisään</h3>
+        <form action="login" method="post">
+            <input type="text" name="username" placeholder="Käyttäjänimi">
+            <br>
+            <input type="password" name="password" placeholder="Salasana">
+            <br>
+            <button type="submit" value="Login"><span>Kirjaudu</span></button>
+        </form>
+        <br>
+        <a id="linkki" href="register.html"><span>Rekisteröidy</span></a>
+        <br><br>
+
+        </div>
+
+        <div id="artikkeli">
+            <h2>Uusimmat blogit</h2>
+            <div class="grid-container" id="kuvalista">
+            </div>
+            </div>
+    </div>
+
+            <script src="js/main.js"></script>
+        </body>
+        </html>

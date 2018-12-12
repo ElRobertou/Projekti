@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uusi blogi</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="ylapalkki">
+    <h1>DOGIBLOGI</h1>
+    <ul>
+        <li><a href="index.html">Koti</a></li>
+        <li><a href="profiili.html">Profiili</a></li>
+        <li><a class="active" href="uusi.html">Uusi blogi</a></li>
+        <li style="float:right"><a href="./logout">Kirjaudu ulos</a></li>
+    </ul>
+</div>
+
+<div id="mega">
+    <div id="sivupalkki">
+        <img id="logo" src="kuvat/logo.png" alt="Logo">
+        <h3>Täällä voit luoda uuden blogin, johon voit lisätä kuvan ja tekstin</h3>
+    </div>
+
+    <div id="artikkeli">
+        <h2>Luo uusi blogi</h2>
+        <div id="reg">
+            <form action="/upload" method="post" enctype="multipart/form-data" id="create">
+                <input type="file" name="kuva" accept="image/*">
+                <br>
+                <input type="text" name="teksti" placeholder="Teksti">
+                <br>
+                <button type="submit"><span>Luo</span></button>
+                <br>
+                <img src="kuvat/koira.JPG" width="380px" alt="koira">
+            </form>
+        </div>
+
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

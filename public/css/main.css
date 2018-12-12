@@ -1,0 +1,237 @@
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html{
+    font-size: 1em;
+    line-height: 1.4;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+p{
+    font-family: Futura;
+    font-size: 20px;
+}
+
+h1{
+     font-family: Futura;
+     text-align: center;
+     font-size: 62px;
+ }
+h2{
+    font-family: Futura;
+    text-align: center;
+    font-size: 38px;
+}
+h3{
+    font-family: Futura;
+    text-align: center;
+    font-size: 26px;
+}
+
+h4{
+    font-family: Futura;
+    font-size: 23px;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightslategray;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    font-family: Futura;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: darkkhaki;
+}
+.active {
+    background-color: darkgreen;
+    color: white;
+}
+#logo{
+   width: 270px;
+    padding-top: 6px;
+}
+#mega{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#artikkeli{
+    order: 2;
+    background-color: bisque;
+    width: 85%;
+    display: block;
+    padding-bottom: 120px;
+
+}
+#ylapalkki {
+    width: 100%;
+    height: 232px;
+    background-color: sandybrown;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 4px;
+}
+#sivupalkki{
+    order: 1;
+    background-color: floralwhite;
+    width: 15%;
+    min-height: 1020px;
+    display: block;
+    text-align: center;
+    padding-top: 4px;
+}
+.grid-container {
+    display: grid;
+    height: 100%;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+div > img {
+    width: 900px;
+    max-height: 1000px;
+}
+
+input[type=text] {
+    width: 270px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=password] {
+    width: 270px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=file] {
+    width: 270px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#reg{
+    display: block;
+    text-align: center;
+}
+#linkki:link, #linkki:visited {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#linkki span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#linkki span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#linkki:hover span {
+    padding-right: 25px;
+}
+
+#linkki:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+button {
+    background-color: #8b3300;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
